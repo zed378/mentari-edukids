@@ -1,6 +1,7 @@
 import Image from "next/image";
 import useWindowSize from "@rooks/use-window-size";
 import { Fade, Slide } from "react-awesome-reveal";
+import Slider from "react-slick";
 
 import why from "../../assets/why.svg";
 import f2f from "../../assets/f2f.svg";
@@ -14,6 +15,14 @@ import saving from "../../assets/saving.svg";
 
 export default function Why() {
   const { innerWidth } = useWindowSize();
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    centerMode: true,
+  };
 
   return (
     <div
