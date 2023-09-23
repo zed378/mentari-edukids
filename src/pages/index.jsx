@@ -9,6 +9,7 @@ import Navbar from "@/components/navbar";
 import Banner from "@/components/banner";
 import Montessori from "@/components/montessori";
 import Why from "@/components/why";
+import Program from "@/components/program";
 
 // assets
 import bg from "../assets/bg.svg";
@@ -32,7 +33,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="h-screen w-screen relative">
-        {innerWidth > 1280 && (
+        {innerWidth > 1280 && mounted && (
           <div className="absolute -top-[5vh] left-0 -z-10">
             <Image
               src={bg}
@@ -57,6 +58,10 @@ export default function Home() {
         {/* Why Us */}
         {mounted && <Why />}
         {/*End of Why Us */}
+
+        {/* Program */}
+        {mounted && <Program />}
+        {/*End of Program */}
       </main>
     </>
   );

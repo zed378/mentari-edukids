@@ -28,17 +28,19 @@ export default function Banner() {
               Selamat Datang di Mentari Edukids
             </h1>
             <h1 className="text-4xl mid:text-center mid:text-3xl font-medium text-white">
-              Bimbingan Belajar Montessori
+              Teman Belajar Si Kecil
             </h1>
           </div>
 
           <p className="text-white text-lg mid:text-center font-light">
             Selamat datang di Mentari Edukids, tempat di mana pembelajaran
-            menjadi sebuah petualangan yang menyenangkan! Kami adalah bimbingan
-            belajar yang mengadopsi metode Montessori untuk membantu anak-anak
-            Anda tumbuh dan berkembang secara optimal.
+            menjadi sebuah petualangan yang menyenangkan! Kami adalah lembaga
+            bimbingan belajar khusus Usia Dini dan SD yang fokus pada
+            pengembangan kualitas belajar anak dan bimbingan belajar yang
+            mengadopsi metode Montessori untuk membantu anak-anak Anda tumbuh
+            dan berkembang secara optimal.
           </p>
-          <button className="hover:text-teal-500 text-white rounded-xl hover:bg-white border-2 border-white py-2 text-xl w-1/2 mid:w-full netbook:bg-white netbook:text-teal-500">
+          <button className="hover:text-teal-600 text-white rounded-xl hover:bg-white border-2 border-white py-2 text-xl w-1/2 mid:w-full netbook:bg-white netbook:text-teal-600">
             Hubungi Kami
           </button>
         </Fade>
