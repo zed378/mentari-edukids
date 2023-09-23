@@ -45,7 +45,7 @@ export default function Banner() {
       </div>
 
       {innerWidth > 900 && (
-        <div className="w-1/2 h-[550px] relative mt-20">
+        <div className="w-1/2 h-[550px] relative">
           <Fade direction="down">
             <Image
               src={book}
