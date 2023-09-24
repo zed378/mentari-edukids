@@ -19,7 +19,10 @@ export default function Navbar() {
 
   return (
     <div className="w-screen px-20 py-4 flex items-center justify-between xl:bg-teal-500 mid:px-5 mid:py-0 mid:pb-10 mid:pt-5 relative">
-      <div className="flex items-center gap-3 cursor-pointer">
+      <div
+        onClick={() => setId("Home")}
+        className="flex items-center gap-3 cursor-pointer"
+      >
         <Fade direction="left" duration={200} cascade>
           <Image src="next.svg" alt="logo" width={100} height={50} />
           <h1 className="text-2xl font-normal text-white">Mentari Edukids</h1>
@@ -38,16 +41,34 @@ export default function Navbar() {
 
       <div className="flex items-center gap-1 mid:hidden">
         <Fade direction="right" duration={200} cascade>
-          <h1 className="text-xl font-normal text-white cursor-pointer rounded-xl hover:bg-white hover:text-teal-500 px-3 py-1">
+          <h1
+            onClick={() => setId("About")}
+            className="text-xl font-normal text-white cursor-pointer rounded-xl hover:bg-white hover:text-teal-500 px-3 py-1"
+          >
             About
           </h1>
-          <h1 className="text-xl font-normal text-white cursor-pointer rounded-xl hover:bg-white hover:text-teal-500 px-3 py-1">
-            Kegiatan
+          <h1
+            onClick={() => setId("Why")}
+            className="text-xl font-normal text-white cursor-pointer rounded-xl hover:bg-white hover:text-teal-500 px-3 py-1"
+          >
+            Why Us
           </h1>
-          <h1 className="text-xl font-normal text-white cursor-pointer rounded-xl hover:bg-white hover:text-teal-500 px-3 py-1">
+          <h1
+            onClick={() => setId("Program")}
+            className="text-xl font-normal text-white cursor-pointer rounded-xl hover:bg-white hover:text-teal-500 px-3 py-1"
+          >
+            Program
+          </h1>
+          <h1
+            onClick={() => setId("Price")}
+            className="text-xl font-normal text-white cursor-pointer rounded-xl hover:bg-white hover:text-teal-500 px-3 py-1"
+          >
             Price List
           </h1>
-          <h1 className="text-xl font-normal text-white cursor-pointer rounded-xl hover:bg-white hover:text-teal-500 px-3 py-1">
+          <h1
+            onClick={() => setId("Contact")}
+            className="text-xl font-normal text-white cursor-pointer rounded-xl hover:bg-white hover:text-teal-500 px-3 py-1"
+          >
             Contact
           </h1>
         </Fade>

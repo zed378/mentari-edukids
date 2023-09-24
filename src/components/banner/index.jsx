@@ -9,6 +9,7 @@ export default function Banner() {
 
   return (
     <div
+      id="Home"
       className={` mid:flex-col flex ${
         innerWidth <= 1280 && "grad"
       } mid:px-4 mid:pb-20 pt-20 netbook:pt-2 min-h-screen`}

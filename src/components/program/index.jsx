@@ -16,7 +16,7 @@ export default function Program() {
 
   return (
     <div
-      id="Why"
+      id="Program"
       className="mid:px-4 mid:py-10 py-20 flex-col flex items-center mid:gap-3 min-h-screen mid:mt-10"
     >
       {innerWidth <= 900 && (
