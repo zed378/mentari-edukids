@@ -40,9 +40,17 @@ export default function Banner() {
             mengadopsi metode Montessori untuk membantu anak-anak Anda tumbuh
             dan berkembang secara optimal.
           </p>
-          <button className="hover:text-teal-600 text-white rounded-xl hover:bg-white border-2 border-white py-2 text-xl w-1/2 mid:w-full netbook:bg-white netbook:text-teal-600">
-            Hubungi Kami
-          </button>
+
+          <a
+            href="https://mentariedukids.my.id/api/ask"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full"
+          >
+            <button className="hover:text-teal-600 text-white rounded-xl hover:bg-white border-2 border-white py-2 text-xl w-1/2 mid:w-full netbook:bg-white netbook:text-teal-600">
+              Hubungi Kami
+            </button>
+          </a>
         </Fade>
       </div>
 

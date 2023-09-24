@@ -155,11 +155,16 @@ export default function Why() {
         </Fade>
 
         <Fade>
-          <div className="w-full flex justify-center">
+          <a
+            href="https://mentariedukids.my.id/api/ask"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full flex justify-center"
+          >
             <button className="hover:text-teal-600 text-white rounded-xl hover:bg-white border-2 border-white py-2 text-xl w-1/2 mid:w-full">
               Hubungi Kami
             </button>
-          </div>
+          </a>
         </Fade>
       </section>
     </div>

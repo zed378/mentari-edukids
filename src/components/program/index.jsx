@@ -145,11 +145,16 @@ export default function Program() {
         </Fade>
 
         <Fade>
-          <div className="w-full flex justify-center mt-10 mid:mt-0">
+          <a
+            href="https://mentariedukids.my.id/api/ask"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full flex justify-center mt-10 mid:mt-0"
+          >
             <button className="hover:text-white text-teal-600 rounded-xl hover:bg-teal-600 border-2 border-teal-600 py-2 text-xl w-1/2 mid:w-full">
               Hubungi Kami
             </button>
-          </div>
+          </a>
         </Fade>
       </section>
     </div>
