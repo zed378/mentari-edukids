@@ -1,7 +1,6 @@
 import Image from "next/image";
 import useWindowSize from "@rooks/use-window-size";
 import { Fade, Slide } from "react-awesome-reveal";
-import Slider from "react-slick";
 
 import why from "../../assets/why.svg";
 import f2f from "../../assets/f2f.svg";

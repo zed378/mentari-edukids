@@ -2,7 +2,6 @@ import Head from "next/head";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import useWindowSize from "@rooks/use-window-size";
-import { Fade, Slide } from "react-awesome-reveal";
 
 // component
 import Navbar from "@/components/navbar";
@@ -10,6 +9,8 @@ import Banner from "@/components/banner";
 import Montessori from "@/components/montessori";
 import Why from "@/components/why";
 import Program from "@/components/program";
+import Student from "@/components/student";
+import Footer from "@/components/footer";
 
 // assets
 import bg from "../assets/bg.svg";
@@ -32,6 +33,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main className="h-screen w-screen relative">
         {innerWidth > 1280 && mounted && (
           <div className="absolute -top-[5vh] left-0 -z-10">
@@ -62,6 +64,14 @@ export default function Home() {
         {/* Program */}
         {mounted && <Program />}
         {/*End of Program */}
+
+        {/* Student */}
+        {mounted && <Student />}
+        {/*End of Student */}
+
+        {/* Footer */}
+        {mounted && <Footer />}
+        {/*End of Footer */}
       </main>
     </>
   );

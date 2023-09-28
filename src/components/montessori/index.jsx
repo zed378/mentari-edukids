@@ -19,7 +19,7 @@ export default function Montessori() {
           <h1 className="mid:text-center mid:text-2xl mid:font-medium text-4xl">
             Apa itu Metode Montessori?
           </h1>
-          <p className="mid:text-lg mid:font-light mid:text-center text-lg">
+          <p className="mid:text-lg font-light mid:text-center text-lg">
             Metode Montessori adalah pendekatan pembelajaran yang sangat
             dihormati di seluruh dunia. Ini memandang setiap anak sebagai
             individu yang unik dengan potensi tak terbatas. Kami percaya bahwa

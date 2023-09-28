@@ -1,6 +1,6 @@
 import Image from "next/image";
 import useWindowSize from "@rooks/use-window-size";
-import { Fade } from "react-awesome-reveal";
+import { Fade, Slide } from "react-awesome-reveal";
 
 import book from "../../assets/book.svg";
 
@@ -15,7 +15,7 @@ export default function Banner() {
       } mid:px-4 mid:pb-20 pt-20 netbook:pt-2 min-h-screen`}
     >
       {innerWidth <= 900 && (
-        <Fade direction="down" duration={500}>
+        <Fade>
           <div className="w-full h-[100px] mid:h-[300px] mid:mt-10 flex justify-center relative">
             <Image src={book} alt={book} />
           </div>
@@ -56,15 +56,13 @@ export default function Banner() {
       </div>
 
       {innerWidth > 900 && (
-        <div className="w-1/2 h-[550px] relative">
-          <Fade direction="down">
-            <Image
-              src={book}
-              alt={book}
-              className="h-[550px] w-auto absolute md:right-[20px] laptop:right-[75px]"
-            />
-          </Fade>
-        </div>
+        <Fade duration={500} className="w-1/2 h-[550px] relative">
+          <Image
+            src={book}
+            alt={book}
+            className="h-[550px] w-auto absolute md:right-[20px] laptop:right-[75px]"
+          />
+        </Fade>
       )}
     </div>
   );
