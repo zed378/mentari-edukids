@@ -29,7 +29,7 @@ export default function Navbar() {
         </Fade>
       </div>
 
-      {innerWidth <= 768 && (
+      {innerWidth <= 1024 && (
         <RxHamburgerMenu
           color="white"
           size={20}
@@ -39,7 +39,7 @@ export default function Navbar() {
 
       {drawer && <Drawer close={() => setDrawer(false)} click={setId} />}
 
-      <div className="flex items-center gap-1 mid:hidden">
+      <div className="flex items-center gap-1 lg:hidden">
         <Fade direction="right" duration={200} cascade>
           <h1
             onClick={() => setId("About")}
@@ -58,6 +58,12 @@ export default function Navbar() {
             className="text-xl font-normal text-white cursor-pointer rounded-xl hover:bg-white hover:text-teal-500 px-3 py-1"
           >
             Program
+          </h1>
+          <h1
+            onClick={() => setId("Students")}
+            className="text-xl font-normal text-white cursor-pointer rounded-xl hover:bg-white hover:text-teal-500 px-3 py-1"
+          >
+            Students
           </h1>
           <h1
             onClick={() => setId("Price")}
