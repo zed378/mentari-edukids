@@ -17,7 +17,7 @@ export default function Footer() {
   const { innerWidth } = useWindowSize();
   return (
     <>
-      <div className="w-full flex min-h-[500px] flex-wrap mid:flex-wrap-reverse mt-10">
+      <div className="w-full flex min-h-[500px] flex-wrap mid:flex-wrap-reverse mt-10 px-24 mid:px-0">
         <div className="w-[30%] mid:w-full mid:h-[400px] p-4">
           <h1 className="mid:text-lg text-2xl mb-5">Lokasi Kami</h1>
           <Iframe
