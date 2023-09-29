@@ -16,9 +16,9 @@ export default function Footer() {
 
   const { innerWidth } = useWindowSize();
   return (
-    <>
-      <div className="w-full flex min-h-[500px] flex-wrap mid:flex-wrap-reverse mt-10 px-24 mid:px-0">
-        <div className="w-[30%] mid:w-full mid:h-[400px] p-4">
+    <div className="w-full h-auto glass">
+      <div className="w-full flex min-h-[500px] flex-wrap mid:flex-wrap-reverse mt-10 px-24 pt-16 mid:pt-5 mid:px-0">
+        <div className="w-[30%] mid:w-full mid:h-[400px] mid:pt-10 p-4">
           <h1 className="mid:text-lg text-2xl mb-5">Lokasi Kami</h1>
           <Iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.728612102124!2d112.69677148507947!3d-7.271691852705866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fdcbb3ba1bcd%3A0xfa89021604c23b3e!2sMasjid%20An-Nur!5e0!3m2!1sen!2sid!4v1695899194779!5m2!1sen!2sid"
@@ -109,7 +109,9 @@ export default function Footer() {
               </a>
 
               <a
-                href="#"
+                href="https://mentariedukids.my.id/api/ask"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 hover:text-emerald-600"
               >
                 <BiBookBookmark size={20} />
@@ -120,7 +122,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <hr className="h-px mid:mx-4 mx-20 mt-14 bg-gray-400 border-0 rounded-full" />
+      <hr className="h-px mid:mx-4 mx-20 mt-20 bg-gray-400 border-0 rounded-full" />
 
       <div className="w-full flex justify-center items-center mid:py-3 py-8">
         <h1 className="text-center text-xl mid:text-sm">
@@ -135,6 +137,6 @@ export default function Footer() {
           {year} {innerWidth > 900 ? "|" : <br />} All Rights Reserved
         </h1>
       </div>
-    </>
+    </div>
   );
 }

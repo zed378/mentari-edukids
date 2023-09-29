@@ -54,7 +54,7 @@ export default function Home() {
         {/* End of Banner */}
 
         {/* Montessori Explain */}
-        {mounted && <Montessori />}
+        {/* {mounted && <Montessori />} */}
         {/* End of Montessori Explain */}
 
         {/* Why Us */}

@@ -17,7 +17,7 @@ export default function Program() {
   return (
     <div
       id="Program"
-      className="mid:px-4 mid:py-10 py-20 flex-col flex items-center mid:gap-3 min-h-screen mid:mt-10"
+      className="mid:px-4 mid:py-10 py-20 flex-col flex items-center mid:gap-3 min-h-screen relative overflow-hidden"
     >
       {innerWidth <= 900 && (
         <Fade direction="up">
@@ -29,11 +29,26 @@ export default function Program() {
 
       {innerWidth > 900 && (
         <Fade direction="up">
-          <section className="w-full h-[550px] relative flex justify-center">
+          <section className="w-full h-[550px] relative flex justify-center z-10">
             <Image src={program} alt={program} />
           </section>
         </Fade>
       )}
+
+      <div className="absolute top-0 left-0 area -z-10">
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
 
       <section className="w-full px-20 mid:px-0 flex flex-col gap-10 h-auto mid:mt-6 mt-30">
         <Fade direction="down" cascade>
@@ -42,9 +57,9 @@ export default function Program() {
           </h1>
         </Fade>
 
-        <Fade duration={750} cascade>
+        <Fade duration={500} cascade>
           <ul className="grid grid-cols-3 lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 mid:gap-4 gap-12 w-full">
-            <li className="grad text-white rounded-xl shadowed px-8 py-8 flex flex-col items-center gap-3 hover:bg-emerald-300 hover:bg-opacity-30 relative">
+            <li className="glass2 shadowed text-white rounded-xl shadowed px-8 py-8 flex flex-col items-center gap-3 hover:bg-emerald-300 hover:bg-opacity-30 relative">
               <Image src={bubble} alt={bubble} height={300} />
               <h1
                 className={`text-center text-2xl mt-6 ${
@@ -79,7 +94,7 @@ export default function Program() {
               </button>
             </li>
 
-            <li className="grad1 text-white rounded-xl shadowed px-8 py-8 flex flex-col items-center gap-3 hover:bg-emerald-300 hover:bg-opacity-30 mid:scale-100 scale-110">
+            <li className="glass2 shadowed text-white rounded-xl px-8 py-8 flex flex-col items-center gap-3 hover:bg-emerald-300 hover:bg-opacity-30 mid:scale-100 scale-110">
               <Image src={tesla} alt={tesla} height={300} />
 
               <h1
@@ -113,7 +128,7 @@ export default function Program() {
               </button>
             </li>
 
-            <li className="grad text-white rounded-xl shadowed px-8 py-8 flex flex-col items-center gap-3 hover:bg-emerald-300 hover:bg-opacity-30 relative">
+            <li className="glass2 shadowed text-white rounded-xl shadowed px-8 py-8 flex flex-col items-center gap-3 hover:bg-emerald-300 hover:bg-opacity-30 relative">
               <Image src={regular} alt={regular} height={300} />
               <h1
                 className={`text-center text-2xl mt-6 ${!regClass && "mb-16"}`}
