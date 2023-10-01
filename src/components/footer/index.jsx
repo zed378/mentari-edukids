@@ -67,20 +67,20 @@ export default function Footer() {
               <p>Welcome</p>
             </a>
 
-            {/* <a
-              href="#About"
-              className="flex items-center gap-2 hover:text-emerald-600"
-            >
-              <BiSolidVirus size={20} />
-              <p>About</p>
-            </a> */}
-
             <a
               href="#Why"
               className="flex items-center gap-2 hover:text-emerald-600"
             >
               <BiSolidUserCheck size={20} />
               <p>Why Us</p>
+            </a>
+
+            <a
+              href="#Program"
+              className="flex items-center gap-2 hover:text-emerald-600"
+            >
+              <BiSolidVirus size={20} />
+              <p>Program</p>
             </a>
 
             <a
