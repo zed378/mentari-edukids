@@ -39,52 +39,52 @@ export default function Student() {
         <Fade duration={200} cascade>
           <ul className="grid grid-cols-5 grid-rows-5 mid:grid-cols-1 mid:grid-rows-1 gap-5 w-full px-20 text-emerald-700">
             <li className="col-span-2 row-span-2 flex items-center justify-center glass2 hover:bg-emerald-300 hover:bg-opacity-30 p-4">
-              <h1 className="text-4xl font-black text-center">
+              <h1 className="text-4xl font-black">
                 NSA <br />
                 National Star Academy
               </h1>
             </li>
             <li className="col-start-3 row-start-4 flex items-center justify-center glass2 hover:bg-emerald-300 hover:bg-opacity-30 p-4">
-              <h1 className="text-2xl font-black">St. Yosep Luwuk</h1>
+              <h1 className="text-2xl">St. Yosep Luwuk</h1>
             </li>
             <li className="col-start-1 row-start-4 flex items-center justify-center glass2 hover:bg-emerald-300 hover:bg-opacity-30 p-4">
-              <h1 className="text-2xl font-black">Khadijah</h1>
+              <h1 className="text-2xl">Khadijah</h1>
             </li>
             <li className="col-span-2 row-span-2 col-start-3 row-start-2 flex items-center justify-center glass2 hover:bg-emerald-300 hover:bg-opacity-30 p-4">
               <h1 className="text-4xl font-black">Little Sun School</h1>
             </li>
             <li className="col-start-4 row-start-5 flex items-center justify-center glass2 hover:bg-emerald-300 hover:bg-opacity-30 p-4">
-              <h1 className="text-2xl font-black">Al-Falah Darussalam</h1>
+              <h1 className="text-2xl">Al-Falah Darussalam</h1>
             </li>
             <li className="row-span-3 col-start-2 row-start-3 flex items-center justify-center glass2 hover:bg-emerald-300 hover:bg-opacity-30 p-4">
               <h1 className="text-4xl font-black">SDIT Permata</h1>
             </li>
             <li className="col-start-3 row-start-5 flex items-center justify-center glass2 hover:bg-emerald-300 hover:bg-opacity-30 p-4">
-              <h1 className="text-2xl font-black">Putra Pertiwi</h1>
+              <h1 className="text-2xl">Putra Pertiwi</h1>
             </li>
             <li className="col-start-1 row-start-3 flex items-center justify-center glass2 hover:bg-emerald-300 hover:bg-opacity-30 p-4">
-              <h1 className="text-2xl font-black">Kuncup Bunga</h1>
+              <h1 className="text-2xl">Kuncup Bunga</h1>
             </li>
             <li className="col-start-1 row-start-5 flex items-center justify-center glass2 hover:bg-emerald-300 hover:bg-opacity-30 p-4">
-              <h1 className="text-2xl font-black">Al-Fathimiyyah</h1>
+              <h1 className="text-2xl">Al-Fathimiyyah</h1>
             </li>
             <li className="row-span-3 col-start-5 row-start-3 flex items-center justify-center glass2 hover:bg-emerald-300 hover:bg-opacity-30 p-4">
               <h1 className="text-4xl font-black">Raden Patah</h1>
             </li>
             <li className="col-start-3 row-start-1 flex items-center justify-center glass2 hover:bg-emerald-300 hover:bg-opacity-30 p-4">
-              <h1 className="text-2xl font-black">SD Manukan Kulon</h1>
+              <h1 className="text-2xl">SD Manukan Kulon</h1>
             </li>
             <li className="col-start-4 row-start-1 flex items-center justify-center glass2 hover:bg-emerald-300 hover:bg-opacity-30 p-4">
-              <h1 className="text-2xl font-black">SMAN 11</h1>
+              <h1 className="text-2xl">SMAN 11</h1>
             </li>
             <li className="col-start-5 row-start-1 flex items-center justify-center glass2 hover:bg-emerald-300 hover:bg-opacity-30 p-4">
-              <h1 className="text-2xl font-black">SMAN 15</h1>
+              <h1 className="text-2xl">SMAN 15</h1>
             </li>
             <li className="col-start-5 row-start-2 flex items-center justify-center glass2 hover:bg-emerald-300 hover:bg-opacity-30 p-4">
-              <h1 className="text-2xl font-black">SMPN 26</h1>
+              <h1 className="text-2xl">SMPN 26</h1>
             </li>
             <li className="col-start-4 row-start-4 flex items-center justify-center glass2 hover:bg-emerald-300 hover:bg-opacity-30 p-4">
-              <h1 className="text-2xl font-black">SMPN 53</h1>
+              <h1 className="text-2xl">SMPN 53</h1>
             </li>
           </ul>
         </Fade>
