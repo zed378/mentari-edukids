@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import useWindowSize from "@rooks/use-window-size";
 import Image from "next/image";
 import { Fade, Slide } from "react-awesome-reveal";
+import Link from "next/link";
 
 import Drawer from "@/components/drawer";
 
@@ -19,15 +20,12 @@ export default function Navbar() {
 
   return (
     <div className="w-screen px-20 py-4 flex items-center justify-between xl:bg-teal-500 mid:px-5 mid:py-0 mid:pb-10 mid:pt-5 relative">
-      <div
-        onClick={() => setId("Home")}
-        className="flex items-center gap-3 cursor-pointer"
-      >
+      <Link href="/" className="flex items-center gap-3 cursor-pointer">
         <Fade direction="left" duration={200} cascade>
           <Image src="/mentari.png" alt="logo" width={50} height={50} />
           <h1 className="text-2xl font-normal text-white">Mentari Edukids</h1>
         </Fade>
-      </div>
+      </Link>
 
       {innerWidth <= 1024 && (
         <RxHamburgerMenu

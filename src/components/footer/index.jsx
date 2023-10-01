@@ -67,13 +67,13 @@ export default function Footer() {
               <p>Welcome</p>
             </a>
 
-            <a
+            {/* <a
               href="#About"
               className="flex items-center gap-2 hover:text-emerald-600"
             >
               <BiSolidVirus size={20} />
               <p>About</p>
-            </a>
+            </a> */}
 
             <a
               href="#Why"
@@ -91,13 +91,13 @@ export default function Footer() {
               <p>Student Origin</p>
             </a>
 
-            <a
+            {/* <a
               href="#"
               className="flex items-center gap-2 hover:text-emerald-600"
             >
               <BiDollarCircle size={20} />
               <p>Price List</p>
-            </a>
+            </a> */}
 
             <a
               href="https://mentariedukids.my.id/api/ask"
