@@ -31,7 +31,7 @@ export default function Home() {
           content="Bimbel Mentari Edukids dengan metode ajar montessori"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/mentari.png" />
       </Head>
 
       <main className="h-screen w-screen relative">

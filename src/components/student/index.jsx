@@ -5,22 +5,9 @@ import { Fade } from "react-awesome-reveal";
 // Assets
 import students from "../../assets/students.svg";
 
-import "flickity/css/flickity.css";
-
 export default function Student() {
   const { innerWidth } = useWindowSize();
 
-  const flickityOptions = {
-    initialIndex: 4,
-    draggable: true,
-    wrapAround: true,
-    freeScroll: true,
-    contain: true,
-    prevNextButtons: innerWidth > 900 ? true : false,
-    pageDots: innerWidth > 900 ? true : false,
-    autoPlay: true,
-    pauseAutoPlayOnHover: true,
-  };
   return (
     <div
       id="Students"

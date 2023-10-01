@@ -15,10 +15,10 @@ export default function Drawer({ close, click }) {
           className="text-xl text-white"
           onClick={() => {
             close();
-            click("About");
+            click("");
           }}
         >
-          About
+          Home
         </div>
         <div
           className="text-xl text-white"
@@ -47,7 +47,7 @@ export default function Drawer({ close, click }) {
         >
           Student Origin
         </div>
-        <div
+        {/* <div
           className="text-xl text-white"
           onClick={() => {
             close();
@@ -55,15 +55,20 @@ export default function Drawer({ close, click }) {
           }}
         >
           Price List
-        </div>
+        </div> */}
         <div
           className="text-xl text-white"
           onClick={() => {
             close();
-            click("Contact");
           }}
         >
-          Contact
+          <a
+            href="https://mentariedukids.my.id/api/ask"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Contact
+          </a>
         </div>
       </Fade>
     </div>

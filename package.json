@@ -9,18 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
     "@rooks/use-window-size": "^4.11.2",
     "eslint": "8.50.0",
     "eslint-config-next": "13.5.2",
-    "flickity": "^2.3.0",
     "next": "13.5.2",
     "react": "18.2.0",
     "react-awesome-reveal": "^4.2.5",
     "react-dom": "18.2.0",
-    "react-flickity-component": "^4.0.6",
-    "react-icons": "^4.11.0",
-    "react-iframe": "^1.8.5"
+    "react-icons": "^4.11.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",

@@ -24,7 +24,7 @@ export default function Navbar() {
         className="flex items-center gap-3 cursor-pointer"
       >
         <Fade direction="left" duration={200} cascade>
-          <Image src="next.svg" alt="logo" width={100} height={50} />
+          <Image src="/mentari.png" alt="logo" width={50} height={50} />
           <h1 className="text-2xl font-normal text-white">Mentari Edukids</h1>
         </Fade>
       </div>
@@ -41,12 +41,6 @@ export default function Navbar() {
 
       <div className="flex items-center gap-1 lg:hidden">
         <Fade direction="right" duration={200} cascade>
-          <h1
-            onClick={() => setId("About")}
-            className="text-xl font-normal text-white cursor-pointer rounded-xl hover:bg-white hover:text-teal-500 px-3 py-1"
-          >
-            About
-          </h1>
           <h1
             onClick={() => setId("Why")}
             className="text-xl font-normal text-white cursor-pointer rounded-xl hover:bg-white hover:text-teal-500 px-3 py-1"
@@ -65,18 +59,20 @@ export default function Navbar() {
           >
             Students
           </h1>
-          <h1
+          {/* <h1
             onClick={() => setId("Price")}
             className="text-xl font-normal text-white cursor-pointer rounded-xl hover:bg-white hover:text-teal-500 px-3 py-1"
           >
             Price List
-          </h1>
-          <h1
-            onClick={() => setId("Contact")}
+          </h1> */}
+          <a
+            href="https://mentariedukids.my.id/api/ask"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-xl font-normal text-white cursor-pointer rounded-xl hover:bg-white hover:text-teal-500 px-3 py-1"
           >
             Contact
-          </h1>
+          </a>
         </Fade>
       </div>
     </div>
