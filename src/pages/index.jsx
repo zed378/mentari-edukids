@@ -9,6 +9,7 @@ import Banner from "@/components/banner";
 import Montessori from "@/components/montessori";
 import Why from "@/components/why";
 import Program from "@/components/program";
+import Activity from "@/components/activity";
 import Student from "@/components/student";
 import Footer from "@/components/footer";
 
@@ -64,6 +65,10 @@ export default function Home() {
         {/* Program */}
         {mounted && <Program />}
         {/*End of Program */}
+
+        {/* Activity */}
+        {mounted && <Activity />}
+        {/*End of Activity */}
 
         {/* Student */}
         {mounted && <Student />}

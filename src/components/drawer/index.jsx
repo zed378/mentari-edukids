@@ -42,6 +42,15 @@ export default function Drawer({ close, click }) {
           className="text-xl text-white"
           onClick={() => {
             close();
+            click("Activity");
+          }}
+        >
+          Activity
+        </div>
+        <div
+          className="text-xl text-white"
+          onClick={() => {
+            close();
             click("Students");
           }}
         >

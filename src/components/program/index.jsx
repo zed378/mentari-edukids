@@ -35,6 +35,21 @@ export default function Program() {
         </Fade>
       )}
 
+      <div className="absolute top-0 left-0 transarea -z-[1] -scale-y-100">
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+
       <div className="absolute top-0 left-0 area -z-10">
         <ul className="circles">
           <li></li>

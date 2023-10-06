@@ -95,3 +95,26 @@ a {
   -webkit-box-shadow: 0px 0px 31px 1px rgba(167, 255, 255, 0.5);
   -moz-box-shadow: 0px 0px 31px 1px rgba(167, 255, 255, 0.5);
 }
+
+.slide {
+  transform: scale(0.4);
+  transition: transform 300ms;
+  opacity: 0.5;
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  -ms-transform: scale(0.4);
+  -o-transform: scale(0.4);
+  -webkit-transition: transform 300ms;
+  -moz-transition: transform 300ms;
+  -ms-transition: transform 300ms;
+  -o-transition: transform 300ms;
+}
+
+.activeSlide {
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}

@@ -52,6 +52,12 @@ export default function Navbar() {
             Program
           </h1>
           <h1
+            onClick={() => setId("Activity")}
+            className="text-xl font-normal text-white cursor-pointer rounded-xl hover:bg-white hover:text-teal-500 px-3 py-1"
+          >
+            Aktifitas
+          </h1>
+          <h1
             onClick={() => setId("Students")}
             className="text-xl font-normal text-white cursor-pointer rounded-xl hover:bg-white hover:text-teal-500 px-3 py-1"
           >

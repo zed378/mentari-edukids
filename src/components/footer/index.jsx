@@ -18,7 +18,7 @@ export default function Footer() {
 
   const { innerWidth } = useWindowSize();
   return (
-    <div className="w-full h-auto glass">
+    <div className="w-full h-auto">
       <div className="w-full grid grid-cols-3 mid:grid-cols-1 gap-4 mt-10 px-24 pt-16 mid:pt-5 mid:px-0">
         <div className="mid:w-full mid:h-[400px] mid:pt-10 p-4 flex items-start justify-center">
           <Image src={logo} alt="Logo mentari edukids" width={300} />
