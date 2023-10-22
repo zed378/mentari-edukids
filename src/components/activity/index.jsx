@@ -1,37 +1,23 @@
-import { useState, useEffect } from "react";
-import Image from "next/image";
-import Slider from "react-slick";
-import useWindowSize from "@rooks/use-window-size";
-import { Fade, Slide } from "react-awesome-reveal";
+"use client";
 
+import { useState } from "react";
+import Image from "next/image";
+import useWindowSize from "@rooks/use-window-size";
+import { Fade } from "react-awesome-reveal";
+import dynamic from "next/dynamic";
+
+const ScrollCarousel = dynamic(() => import("./carousel"), { ssr: false });
+
+// assets
 import learn from "../../assets/learn.svg";
-import pict1 from "../../assets/pict/pict1.webp";
-import pict2 from "../../assets/pict/pict2.webp";
-import pict3 from "../../assets/pict/pict3.webp";
-import pict4 from "../../assets/pict/pict4.webp";
-import pict5 from "../../assets/pict/pict5.webp";
-import pict6 from "../../assets/pict/pict6.webp";
-import pict7 from "../../assets/pict/pict7.webp";
+import { BiGroup } from "react-icons/bi";
+import { SiTesla } from "react-icons/si";
+import { BsGlobeAsiaAustralia } from "react-icons/bs";
 
 export default function Activity() {
-  const images = [pict1, pict2, pict3, pict4, pict5, pict6, pict7];
-  const [imgIndex, setImgIndex] = useState(0);
   const { innerWidth } = useWindowSize();
 
-  const settings = {
-    autoplay: true,
-    autoplaySpeed: 3000,
-    speed: 1000,
-    dots: true,
-    infinite: true,
-    centerPadding: "10px",
-    arrows: false,
-    pauseOnHover: false,
-    slidesToShow: innerWidth <= 900 ? 1 : 3,
-    slidesToScroll: 1,
-    centerMode: true,
-    beforeChange: (current, next) => setImgIndex(next),
-  };
+  const [classStudy, setClassStudy] = useState("tesla");
 
   return (
     <div
@@ -90,77 +76,49 @@ export default function Activity() {
         </h1>
       </Fade>
 
-      <Slider {...settings} className="w-full mb-20">
-        <Image
-          src={pict1}
-          alt={pict1}
-          className={`${
-            images.indexOf(pict1) === imgIndex ? "slide activeSlide" : "slide"
-          } w-auto flex justify-center items-center ${
-            innerWidth < 900 ? "px-2" : "px-20"
-          }`}
-        />
+      <div className="border-b border-gray-200 dark:border-gray-700">
+        <ul className="flex flex-wrap -mb-px text-sm font-medium text-center text-gray-500 dark:text-gray-400">
+          <li className="mr-2" onClick={() => setClassStudy("reg")}>
+            <div
+              className={`inline-flex items-center justify-center gap-2 cursor-pointer text-xl p-4 border-b-2 border-transparent rounded-t-lg ${
+                classStudy === "reg"
+                  ? "text-teal-700 border-teal-700"
+                  : "hover:text-teal-700 hover:border-teal-700 text-teal-500"
+              } group`}
+            >
+              <BiGroup /> Kelas Reguler
+            </div>
+          </li>
 
-        <Image
-          src={pict2}
-          alt={pict2}
-          className={`${
-            images.indexOf(pict2) === imgIndex ? "slide activeSlide" : "slide"
-          } w-auto flex justify-center items-center ${
-            innerWidth < 900 ? "px-2" : "px-20"
-          }`}
-        />
+          <li className="mr-2" onClick={() => setClassStudy("tesla")}>
+            <div
+              className={`inline-flex items-center justify-center gap-2 cursor-pointer text-xl p-4 border-b-2 border-transparent rounded-t-lg ${
+                classStudy === "tesla"
+                  ? "text-teal-700 border-teal-700"
+                  : "hover:text-teal-700 hover:border-teal-700 text-teal-500"
+              } group`}
+            >
+              <SiTesla />
+              Kelas Tesla
+            </div>
+          </li>
 
-        <Image
-          src={pict3}
-          alt={pict3}
-          className={`${
-            images.indexOf(pict3) === imgIndex ? "slide activeSlide" : "slide"
-          } w-auto flex justify-center items-center ${
-            innerWidth < 900 ? "px-2" : "px-20"
-          }`}
-        />
+          <li className="mr-2" onClick={() => setClassStudy("bub")}>
+            <div
+              className={`inline-flex items-center justify-center gap-2 cursor-pointer text-xl p-4 border-b-2 border-transparent rounded-t-lg ${
+                classStudy === "bub"
+                  ? "text-teal-700 border-teal-700"
+                  : "hover:text-teal-700 hover:border-teal-700 text-teal-500"
+              } group`}
+            >
+              <BsGlobeAsiaAustralia />
+              Kelas Bubble
+            </div>
+          </li>
+        </ul>
+      </div>
 
-        <Image
-          src={pict4}
-          alt={pict4}
-          className={`${
-            images.indexOf(pict4) === imgIndex ? "slide activeSlide" : "slide"
-          } w-auto flex justify-center items-center ${
-            innerWidth < 900 ? "px-2" : "px-20"
-          }`}
-        />
-
-        <Image
-          src={pict5}
-          alt={pict5}
-          className={`${
-            images.indexOf(pict5) === imgIndex ? "slide activeSlide" : "slide"
-          } w-auto flex justify-center items-center ${
-            innerWidth < 900 ? "px-2" : "px-20"
-          }`}
-        />
-
-        <Image
-          src={pict6}
-          alt={pict6}
-          className={`${
-            images.indexOf(pict6) === imgIndex ? "slide activeSlide" : "slide"
-          } w-auto flex justify-center items-center ${
-            innerWidth < 900 ? "px-2" : "px-20"
-          }`}
-        />
-
-        <Image
-          src={pict7}
-          alt={pict7}
-          className={`${
-            images.indexOf(pict7) === imgIndex ? "slide activeSlide" : "slide"
-          } w-auto flex justify-center items-center ${
-            innerWidth < 900 ? "px-2" : "px-20"
-          }`}
-        />
-      </Slider>
+      <ScrollCarousel classStudy={classStudy} />
     </div>
   );
 }
