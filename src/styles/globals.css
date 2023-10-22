@@ -96,25 +96,12 @@ a {
   -moz-box-shadow: 0px 0px 31px 1px rgba(167, 255, 255, 0.5);
 }
 
-.slide {
-  transform: scale(0.4);
-  transition: transform 300ms;
-  opacity: 0.5;
-  -webkit-transform: scale(0.4);
-  -moz-transform: scale(0.4);
-  -ms-transform: scale(0.4);
-  -o-transform: scale(0.4);
-  -webkit-transition: transform 300ms;
-  -moz-transition: transform 300ms;
-  -ms-transition: transform 300ms;
-  -o-transition: transform 300ms;
-}
-
-.activeSlide {
-  transform: scale(1);
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
+.backk {
+  background: rgb(0, 255, 243);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 243, 0.7) 0%,
+    rgba(0, 226, 205, 0.7) 50%,
+    rgba(2, 157, 137, 0.7) 100%
+  );
 }

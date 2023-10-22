@@ -7,6 +7,7 @@ import { Fade } from "react-awesome-reveal";
 import dynamic from "next/dynamic";
 
 const ScrollCarousel = dynamic(() => import("./carousel"), { ssr: false });
+import PriceList from "./pricelist";
 
 // assets
 import learn from "../../assets/learn.svg";
@@ -24,6 +25,7 @@ export default function Activity() {
       id="Activity"
       className="mid:px-4 mid:py-10 flex-col flex items-center justify-center gap-10 mid:gap-3 min-h-screen relative"
     >
+      {/* bg animation */}
       <div className="absolute top-0 left-0 areas -z-10 -scale-y-100">
         <ul className="circless">
           <li></li>
@@ -53,6 +55,7 @@ export default function Activity() {
           <li></li>
         </ul>
       </div>
+      {/* end of bg animation */}
 
       {innerWidth <= 900 && (
         <Fade direction="up">
@@ -119,6 +122,8 @@ export default function Activity() {
       </div>
 
       <ScrollCarousel classStudy={classStudy} />
+
+      <PriceList />
     </div>
   );
 }

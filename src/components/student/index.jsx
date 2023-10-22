@@ -17,7 +17,7 @@ export default function Student() {
   return (
     <div
       id="Students"
-      className="mid:px-4 mid:py-10 py-20 flex-col flex items-center mid:gap-3 min-h-screen mid:mt-10 w-screen relative"
+      className="mid:px-4 mid:py-10 py-20 flex-col flex items-center mid:gap-3 min-h-screen w-screen relative"
     >
       <div className="absolute top-0 left-0 transarea -z-[1] -scale-y-100">
         <ul className="circles">
