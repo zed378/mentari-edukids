@@ -5,18 +5,18 @@ import ScrollCarousel from "scroll-carousel-react";
 import Image from "next/image";
 import useWindowSize from "@rooks/use-window-size";
 
-import bb1 from "../../assets/pict/bb1.png";
-import bb2 from "../../assets/pict/bb2.png";
-import bb3 from "../../assets/pict/bb3.png";
-import bb4 from "../../assets/pict/bb4.png";
-import bb5 from "../../assets/pict/bb5.png";
-import reg1 from "../../assets/pict/reg1.png";
-import reg2 from "../../assets/pict/reg2.png";
-import reg3 from "../../assets/pict/reg3.png";
-import reg4 from "../../assets/pict/reg4.png";
-import tes1 from "../../assets/pict/tes1.png";
-import tes2 from "../../assets/pict/tes2.png";
-import tes3 from "../../assets/pict/tes3.png";
+import bb1 from "../../assets/pict/bb1.webp";
+import bb2 from "../../assets/pict/bb2.webp";
+import bb3 from "../../assets/pict/bb3.webp";
+import bb4 from "../../assets/pict/bb4.webp";
+import bb5 from "../../assets/pict/bb5.webp";
+import reg1 from "../../assets/pict/reg1.webp";
+import reg2 from "../../assets/pict/reg2.webp";
+import reg3 from "../../assets/pict/reg3.webp";
+import reg4 from "../../assets/pict/reg4.webp";
+import tes1 from "../../assets/pict/tes1.webp";
+import tes2 from "../../assets/pict/tes2.webp";
+import tes3 from "../../assets/pict/tes3.webp";
 
 export default function ScrollCarouselComponent({ classStudy }) {
   const bbImg = [bb1, bb2, bb3, bb4, bb5];
