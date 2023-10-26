@@ -1,8 +1,8 @@
 import Image from "next/image";
 import useWindowSize from "@rooks/use-window-size";
-import { Fade, Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
-import book from "../../assets/book.svg";
+import book from "../../assets/book.webp";
 
 export default function Banner() {
   const { innerWidth } = useWindowSize();
@@ -16,13 +16,18 @@ export default function Banner() {
     >
       {innerWidth <= 900 && (
         <Fade>
-          <div className="w-full h-[100px] mid:h-[300px] mid:mt-10 flex justify-center relative">
-            <Image src={book} alt={book} />
+          <div className="w-full mid:mt-10 flex justify-center relative">
+            <Image
+              src={book}
+              alt={book}
+              width={500}
+              className="rounded-tr-3xl rounded-bl-3xl"
+            />
           </div>
         </Fade>
       )}
 
-      <div className="w-1/2 mid:w-full px-20 mid:px-0 flex flex-col gap-10 h-auto mid:mt-6 mt-40">
+      <div className="w-1/2 mid:w-full px-20 mid:px-0 flex flex-col gap-10 h-auto mid:mt-6 mt-40 ">
         <Fade direction="up" cascade>
           <div className="w-full h-auto">
             <h1 className="text-4xl mid:text-center mid:text-3xl font-medium text-white">
@@ -60,7 +65,8 @@ export default function Banner() {
           <Image
             src={book}
             alt={book}
-            className="h-[550px] w-auto absolute md:right-[20px] laptop:right-[75px]"
+            height={550}
+            className="absolute md:right-[20px] laptop:right-[75px] rounded-tr-3xl rounded-bl-3xl"
           />
         </Fade>
       )}

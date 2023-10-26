@@ -55,8 +55,8 @@ export default function Why() {
           </h1>
           <h2 className="text-black text-center text-2xl mt-6 mid:px-0 mid:text-lg font-light px-32">
             Kami Menawarkan Lebih dari Sekadar Bimbingan Belajar Kami bangga
-            memberikan pengalaman pembelajaran yang unggul dengan delapan
-            keunggulan utama:
+            memberikan pengalaman pembelajaran yang unggul dengan 5 keunggulan
+            utama:
           </h2>
         </Fade>
 
